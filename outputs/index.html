@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3eee2">
+  <meta name="description" content="偏航是一间不按攻略走的旅行编辑部：认真规划，或者报一个 MBTI、抽一道怪题，让值班编辑把你送去一个没想过的地方。">
+  <title>偏航 OFF COURSE｜旅行这次，听谁的？</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231c302f'/%3E%3Ccircle cx='32' cy='32' r='20' fill='none' stroke='%23f3eee2' stroke-width='2'/%3E%3Cpath d='M19 37c8-17 14-18 26-13' fill='none' stroke='%23f0643c' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='45' cy='24' r='4' fill='%23f3eee2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#" data-home aria-label="回到偏航首页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="19.5" stroke="currentColor"/><path d="M9.5 27.5C17 12.5 24 10.5 34.5 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="32.7" cy="15.8" r="3.3" fill="currentColor"/></svg>
+      </span>
+      <span class="brand-word">偏航<small>OFF COURSE</small></span>
+    </a>
+    <div class="edition">TRAVEL ISSUE / 07</div>
+    <nav class="topnav" aria-label="主导航">
+      <button type="button" data-home>两种走法</button>
+      <a href="#method">我们怎么想</a>
+      <button type="button" class="nav-start" data-open-mode="serious">开始规划 <span>↗</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="view home-view is-active" id="home-view">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span>VOL. 07 · 关于如何离开日常</p>
+          <h1>旅行不是<br>逃离，是<em>偏航</em><i>。</i></h1>
+          <p class="hero-intro">先别问“去哪儿”。<br>先回答：你想把这次旅行，交给计划，还是交给偶然？</p>
+          <div class="hero-mode-guide" aria-label="两种走法说明">
+            <p><strong>我很严肃</strong><span>查交通、天气、预算和值得体验的事，给你一份能照着执行的完整攻略。</span></p>
+            <p><strong>我很随意</strong><span>输入 MBTI，或随手答一道怪题；值班室替你选目的地，并认真解释为什么偏偏是这里。</span></p>
+          </div>
+          <div class="hero-mode-actions" aria-label="选择旅行模式">
+            <button type="button" class="hero-mode serious" data-open-mode="serious">
+              <span class="hero-mode-num">01</span>
+              <span class="hero-mode-text"><strong>我很严肃</strong><small>预算 / 路线 / 避坑</small></span>
+              <b>↗</b>
+            </button>
+            <button type="button" class="hero-mode casual" data-open-mode="casual">
+              <span class="hero-mode-num">02</span>
+              <span class="hero-mode-text"><strong>我很随意</strong><small>MBTI / 随机提问 / 胡来</small></span>
+              <b>✦</b>
+            </button>
+          </div>
+          <p class="hero-smallnote">认真或离谱，都只需要 30 秒。<button type="button" data-scroll-choose>先看看两种走法 ↓</button></p>
+          <div class="hero-coordinate"><span>31°13'N</span><span>121°28'E</span><span>找不到方向，也是一种方向</span></div>
+        </div>
+
+        <div class="hero-visual" aria-label="一张画着山脉、太阳与旅行路线的虚构旅行明信片">
+          <div class="postcard">
+            <svg class="postcard-art" viewBox="0 0 640 790" role="img" aria-hidden="true">
+              <defs>
+                <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#b7d5d6"/>
+                  <stop offset="0.62" stop-color="#e9d8b6"/>
+                  <stop offset="1" stop-color="#f5d79d"/>
+                </linearGradient>
+                <clipPath id="posterClip"><rect width="640" height="790"/></clipPath>
+              </defs>
+              <g clip-path="url(#posterClip)">
+                <rect width="640" height="790" fill="url(#skyGrad)"/>
+                <circle cx="470" cy="185" r="104" fill="#ef6a42"/>
+                <path d="M-30 306c83-21 111-66 171-61 54 4 75 33 118 23 57-14 90-63 164-49 74 15 110 74 221 50v177H-30Z" fill="#b4cfc1" opacity=".8"/>
+                <path d="M-40 405c74-51 126-12 186-36 53-21 84-73 161-57 70 15 98 81 165 72 67-9 110-52 196-18v210H-40Z" fill="#4f7c70"/>
+                <path d="M-20 486c85-37 136 18 210-8 86-30 111-82 207-50 75 25 111 66 253 21v233H-20Z" fill="#254b46"/>
+                <path d="M-12 612c102-59 173-22 254-52 92-35 144-74 233-24 60 34 99 46 170 25v240H-12Z" fill="#1b3532"/>
+                <path d="M-10 681c93-24 138-7 220-28 95-24 151-46 224-26 65 18 117 31 210 8v171H-10Z" fill="#122725"/>
+                <path d="M77 679c45-62 86-67 134-22 18 17 35 25 63 37" fill="none" stroke="#e8dfc9" stroke-width="2" stroke-dasharray="7 11" opacity=".8"/>
+                <path d="M109 312c52 121 20 235 139 348 52 49 103 68 211 78" fill="none" stroke="#f5ecd7" stroke-width="3" stroke-dasharray="3 13" stroke-linecap="round"/>
+                <path d="M360 592l12 17 27 3-20 18 5 26-24-13-24 13 5-26-20-18 27-3Z" fill="#f0c860" stroke="#18312f" stroke-width="2"/>
+                <g fill="none" stroke="#e8dfc9" stroke-width="1.3" opacity=".7">
+                  <path d="M-20 722c122-26 204 18 319-8 121-28 190-59 360-15"/>
+                  <path d="M-40 750c136-25 224 22 350-8 128-30 214-42 365-11"/>
+                  <path d="M-30 776c153-28 235 16 363-11 119-25 205-35 348-18"/>
+                </g>
+                <g fill="#f2ebdb" font-family="Georgia, serif" font-size="12" letter-spacing="2">
+                  <text x="34" y="42">SOMEWHERE, PROBABLY</text>
+                  <text x="430" y="770">NO. 07 / 26</text>
+                </g>
+                <g fill="#193430" font-family="Georgia, serif" font-size="14" letter-spacing="1.8">
+                  <text x="69" y="665">LEAVE THE GUIDEBOOK</text>
+                  <text x="69" y="685">AT HOME</text>
+                </g>
+                <g transform="translate(82 290) rotate(-7)">
+                  <circle r="66" fill="#f3eee2" fill-opacity=".87"/>
+                  <circle r="56" fill="none" stroke="#1c3531" stroke-width="1.2" stroke-dasharray="2 5"/>
+                  <text text-anchor="middle" y="-8" fill="#1c3531" font-family="Georgia, serif" font-size="12" letter-spacing="2">GOING</text>
+                  <text text-anchor="middle" y="24" fill="#e85f39" font-family="Georgia, serif" font-size="26" font-style="italic">nowhere</text>
+                </g>
+              </g>
+            </svg>
+            <div class="postcard-caption">
+              <span>本期目的地</span>
+              <strong>尚未确定</strong>
+              <span>等一个决定</span>
+            </div>
+          </div>
+          <div class="floating-ticket">
+            <span>OPEN RETURN</span>
+            <strong>单程 · 去往未知</strong>
+            <small>座位：靠窗 / 心情：待定</small>
+          </div>
+          <div class="hero-scribble" aria-hidden="true">→ 从这里开始</div>
+        </div>
+      </section>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>不赶路</span><i>✳</i><span>不打卡</span><i>✳</i><span>不证明什么</span><i>✳</i><span>只负责偏离</span><i>✳</i>
+          <span>不赶路</span><i>✳</i><span>不打卡</span><i>✳</i><span>不证明什么</span><i>✳</i><span>只负责偏离</span><i>✳</i>
+        </div>
+      </div>
+
+      <section class="choose-section" id="choose">
+        <div class="section-intro">
+          <p class="eyebrow"><span></span>CHOOSE YOUR DEPARTURE</p>
+          <h2>今天，<br>你打算怎么走？</h2>
+          <p>两种完全不同的旅行人格。没有更高级的那一个，只有更想成为的那一个。</p>
+        </div>
+
+        <div class="mode-grid">
+          <article class="mode-card serious-card">
+            <div class="mode-topline"><span>01 / THE PLAN</span><span>可执行</span></div>
+            <div class="mode-art serious-art" aria-hidden="true">
+              <svg viewBox="0 0 480 180" fill="none">
+                <g opacity=".28" stroke="currentColor">
+                  <path d="M0 28h480M0 68h480M0 108h480M0 148h480M48 0v180M108 0v180M168 0v180M228 0v180M288 0v180M348 0v180M408 0v180"/>
+                </g>
+                <path d="M34 133c38-55 91-21 125-69 32-46 82-16 121-52 31-29 85-17 142-5" stroke="#f4c75f" stroke-width="2" stroke-dasharray="6 8"/>
+                <circle cx="34" cy="133" r="6" fill="#f4c75f"/><circle cx="306" cy="16" r="6" fill="#f4c75f"/><circle cx="422" cy="7" r="6" fill="#f4c75f"/>
+                <path d="M84 153h143v-34H84zM271 153h124v-55H271z" fill="#f3eee2" opacity=".08" stroke="#f3eee2" stroke-opacity=".35"/>
+                <path d="M106 119v-18m21 18v-9m22 9v-23m21 23v-12m22 12v-20" stroke="#f3eee2" stroke-opacity=".5"/>
+                <circle cx="371" cy="67" r="26" stroke="#f3eee2" stroke-opacity=".45"/><path d="M371 49v18l12 9" stroke="#f3eee2" stroke-opacity=".65"/>
+              </svg>
+            </div>
+            <div class="mode-copy">
+              <div><span class="mode-cn">正经局</span><h3>我很严肃</h3></div>
+              <p>预算、车次、季节、路线、值不值得。把每个不确定，提前变成一张能执行的表。</p>
+            </div>
+            <ul class="mode-list">
+              <li><span>预算可控</span><em>含人均预估与拆分</em></li>
+              <li><span>反向旅行</span><em>绕开网红排队路线</em></li>
+              <li><span>按天交付</span><em>去哪儿、怎么去、何时去</em></li>
+            </ul>
+            <button class="mode-cta" type="button" data-open-mode="serious"><span>给我一份正经攻略</span><b>↗</b></button>
+            <div class="mode-stamp">计划<br>之内</div>
+          </article>
+
+          <article class="mode-card casual-card">
+            <div class="mode-topline"><span>02 / THE ACCIDENT</span><span>很离谱</span></div>
+            <div class="mode-art casual-art" aria-hidden="true">
+              <svg viewBox="0 0 480 180" fill="none">
+                <path d="M221 94c-19-39 13-70 52-62 33 7 42 42 24 66-17 23-62 25-76-4Z" fill="#f7f0df" stroke="#19322f" stroke-width="2"/>
+                <path d="M300 73c23-28 66-17 70 19 4 34-31 54-58 38-26-15-27-39-12-57Z" fill="#e95f39"/>
+                <path d="M135 63c22-26 61-16 66 18 4 31-27 50-53 35-24-14-26-36-13-53Z" fill="#89b4ad" stroke="#19322f" stroke-width="2"/>
+                <circle cx="228" cy="91" r="13" fill="#19322f"/>
+                <path d="M46 126c77-12 103-71 173-47 67 22 79 53 149 29 39-14 51-42 69-56" stroke="#19322f" stroke-width="2" stroke-dasharray="3 7"/>
+                <path d="M413 52l16-3-9 14-2 12" stroke="#19322f" stroke-width="2"/>
+                <g fill="#19322f" font-family="Georgia, serif" font-size="11" letter-spacing="2" opacity=".72"><text x="37" y="36">NO PLAN</text><text x="340" y="157">NO PROBLEM</text></g>
+                <g stroke="#19322f" opacity=".45"><path d="M38 78l8-17 8 17M57 78l8-17 8 17"/><path d="M394 112l8-17 8 17"/></g>
+              </svg>
+            </div>
+            <div class="mode-copy">
+              <div><span class="mode-cn">离谱局</span><h3>我很随意</h3></div>
+              <p>不做攻略。报一个 MBTI，或者让值班编辑现场出一道怪题；他会挑一个目的地，再写一篇比旅行还长的、一本正经的胡说八道。</p>
+            </div>
+            <ul class="mode-list">
+              <li><span>报上 MBTI</span><em>按性格盲选一个远方</em></li>
+              <li><span>现场随机出题</span><em>每次题目都不重复</em></li>
+              <li><span>长篇强行解释</span><em>理由必须比行程还长</em></li>
+            </ul>
+            <button class="mode-cta" type="button" data-open-mode="casual"><span>让偏航过度解读我</span><b>✦</b></button>
+            <div class="mode-stamp">后果<br>自负</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="featured-section">
+        <div class="featured-head">
+          <div>
+            <p class="eyebrow"><span></span>FIELD NOTES / 编辑部私藏</p>
+            <h2>不追榜单，<br>只追几条值得绕的路。</h2>
+          </div>
+          <p>真正好的地方，通常不负责在入口处让你拍照。以下三处，是我们愿意再去一次、也愿意认真替你算钱的地方。</p>
+        </div>
+        <div class="featured-grid" id="featured-grid"></div>
+        <p class="featured-footnote">想看更多？严肃版会根据你的出发地、月份和预算，从私藏档案里匹配一份完整攻略。</p>
+      </section>
+
+      <section class="method-section" id="method">
+        <div class="method-title">
+          <p class="eyebrow light"><span></span>THE OFF-COURSE METHOD</p>
+          <h2>我们不负责<br>让你“来都来了”。</h2>
+        </div>
+        <div class="method-grid">
+          <article><span>01</span><h3>先算清代价</h3><p>时间也是预算。一份靠谱攻略应该告诉你，哪些地方值得花两小时，哪些只值得在门口点头致意。</p></article>
+          <article><span>02</span><h3>绕开人群</h3><p>“必去”不等于“值得”。我们会把排队两小时的网红点，换成清晨的菜市场、落日前的旧桥和本地人真的会去的馆子。</p></article>
+          <article><span>03</span><h3>保留偶然</h3><p>行程不是监工表。每天留一段空白，让一场雨、一家店或一个路人的建议，有机会改变这一天。</p></article>
+        </div>
+        <div class="method-note">旅行不是把生活塞进行李箱，<br>是终于有勇气把它倒出来一点。</div>
+      </section>
+    </section>
+
+    <section class="view planner-view" id="serious-view">
+      <div class="planner-shell">
+        <div class="planner-copy">
+          <div class="view-heading-row">
+            <button type="button" class="text-back" data-home>← 回到分岔口</button>
+            <span class="view-index">01 / 正经局</span>
+          </div>
+          <p class="eyebrow"><span></span>A PLAN WITH ROOM TO WANDER</p>
+          <h1>把未知，<br>安排<em>明白</em>。</h1>
+          <p class="planner-lede">告诉我们真实的限制。AI 会先联网核对交通、天气、开放与预约信息，再把“怎么去、何时去、值得花时间的事”写成一份不必临时抱佛脚的攻略。</p>
+          <div class="planner-promise">
+            <div><span>01</span><p>预算可以留空。没钱不是问题，假装有钱才是。</p></div>
+            <div><span>02</span><p>会给你避开网红路线的替代方案，而不是只让你“早点去”。</p></div>
+            <div><span>03</span><p>会附上本轮检索来源；票价、班次和开放状态仍以官方页面为准。</p></div>
+          </div>
+          <div class="planner-quote">“攻略的尽头，是让你有余裕对计划说不。”</div>
+        </div>
+
+        <form class="plan-form" id="serious-form" novalidate>
+          <div class="form-head"><span>PLANNER'S BRIEF</span><span>约 30–90 秒</span></div>
+          <div class="field">
+            <label for="origin">从哪里出发？<small>必填</small></label>
+            <div class="text-input-wrap">
+              <span class="input-icon">⌖</span>
+              <input id="origin" name="origin" type="text" maxlength="24" autocomplete="address-level2" placeholder="例如：上海 / 成都 / 深圳">
+            </div>
+            <p class="field-error" id="origin-error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="destination">想去哪里？<small>可选，留空让 AI 结合条件来选</small></label>
+            <div class="text-input-wrap">
+              <span class="input-icon">◎</span>
+              <input id="destination" name="destination" type="text" maxlength="40" autocomplete="off" placeholder="例如：泉州 / 鸟取 / 暂时没想法">
+            </div>
+          </div>
+          <div class="field-split">
+            <div class="field">
+              <label for="start-date">哪天出发？</label>
+              <div class="text-input-wrap date-input">
+                <span class="input-icon">◷</span>
+                <input id="start-date" name="start-date" type="date" required>
+              </div>
+              <p class="field-error" id="start-date-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <span class="field-label">玩几天？</span>
+              <div class="chip-group" role="radiogroup" aria-label="旅行天数">
+                <label class="chip"><input type="radio" name="days" value="3"><span>3 天</span></label>
+                <label class="chip"><input type="radio" name="days" value="5" checked><span>5 天</span></label>
+                <label class="chip"><input type="radio" name="days" value="7"><span>7 天</span></label>
+                <label class="chip"><input type="radio" name="days" value="custom"><span>自定义</span></label>
+              </div>
+              <div class="custom-days-field" id="custom-days-field" hidden>
+                <label for="custom-days">天数</label>
+                <input id="custom-days" name="custom-days" type="number" min="1" max="10" step="1" inputmode="numeric" placeholder="1–10">
+                <span>天</span>
+              </div>
+              <p class="field-error" id="days-error" aria-live="polite"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="budget">人均预算 <small>可选，不填也行</small></label>
+            <div class="text-input-wrap money-input">
+              <span class="input-icon">¥</span>
+              <input id="budget" name="budget" type="number" min="0" step="100" inputmode="numeric" placeholder="不设预算，也可以">
+            </div>
+            <div class="quick-budgets" aria-label="快速选择预算">
+              <button type="button" data-budget="3000">3,000</button>
+              <button type="button" data-budget="6000">6,000</button>
+              <button type="button" data-budget="10000">10,000</button>
+              <button type="button" data-budget="15000">15,000</button>
+              <button type="button" data-budget="">不设限</button>
+            </div>
+          </div>
+          <div class="field">
+            <span class="field-label">这趟最想要什么？<small>最多选 2 个，不选就都行</small></span>
+            <div class="chip-group interests" role="group" aria-label="旅行偏好">
+              <label class="chip"><input type="checkbox" name="interests" value="古建"><span>古建</span></label>
+              <label class="chip"><input type="checkbox" name="interests" value="山野"><span>山野</span></label>
+              <label class="chip"><input type="checkbox" name="interests" value="海风"><span>海风</span></label>
+              <label class="chip"><input type="checkbox" name="interests" value="老城"><span>老城</span></label>
+              <label class="chip"><input type="checkbox" name="interests" value="美食"><span>美食</span></label>
+              <label class="chip"><input type="checkbox" name="interests" value="艺术"><span>艺术</span></label>
+            </div>
+          </div>
+          <p class="form-error" id="serious-error" role="alert" aria-live="polite"></p>
+          <button type="submit" class="form-submit"><span>联网检索并生成可执行攻略</span><b>↗</b></button>
+          <p class="form-privacy">AI 会进行多轮联网检索，通常需要 30–90 秒；Key 只在本地服务端。</p>
+        </form>
+      </div>
+      <div class="result-slot" id="serious-result" aria-live="polite"></div>
+    </section>
+
+    <section class="view casual-view" id="casual-view">
+      <div class="casual-shell" id="casual-intro">
+        <div class="view-heading-row">
+          <button type="button" class="text-back" data-home>← 回到分岔口</button>
+          <span class="view-index">02 / 离谱局</span>
+        </div>
+        <div class="casual-intro-grid">
+          <div class="casual-title-block">
+            <p class="eyebrow"><span></span>SERENDIPITY DESK / 越权判词现场</p>
+            <h1>报个类型，<br>或者让远方<br><em>随便问。</em></h1>
+            <p>两条离谱路线：直接输入 MBTI，让值班编辑按性格把你发配；或者让他现场出一道怪题，再根据答案继续编。每次目的地都不太一样，别把它当天气预报。</p>
+            <div class="casual-disclaimer">
+              <span>⚠</span>
+              <p>目的地与地理信息尽量真实；性格解释纯属娱乐；预算和营业时间仍请自行复核。</p>
+            </div>
+          </div>
+          <div class="casual-visual">
+            <div class="compass">
+              <svg viewBox="0 0 400 400" fill="none" aria-hidden="true">
+                <circle cx="200" cy="200" r="167" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 8"/>
+                <circle cx="200" cy="200" r="132" stroke="currentColor" opacity=".32"/>
+                <circle cx="200" cy="200" r="54" fill="#1b3330"/>
+                <path d="M200 38l21 134-21 28-21-28 21-134Z" fill="#e85f39"/>
+                <path d="M200 362l-21-134 21-28 21 28-21 134Z" fill="#f6f0df"/>
+                <path d="M38 200l134-21 28 21-28 21-134-21Z" fill="#f6f0df" stroke="currentColor"/>
+                <path d="M362 200l-134 21-28-21 28-21 134 21Z" fill="#f6f0df" stroke="currentColor"/>
+                <g fill="currentColor" font-family="Georgia, serif" font-size="13" letter-spacing="3" text-anchor="middle"><text x="200" y="28">N</text><text x="200" y="386">S</text><text x="22" y="205">W</text><text x="378" y="205">E</text></g>
+                <circle cx="200" cy="200" r="6" fill="#f4c95f"/>
+              </svg>
+              <span class="compass-note note-one">你也说不准</span>
+              <span class="compass-note note-two">正好</span>
+            </div>
+            <div class="casual-number">02<small>WAYS TO GET LOST</small></div>
+          </div>
+        </div>
+        <div class="casual-start-card">
+          <div class="casual-budget-strip">
+            <div>
+              <span class="casual-start-label">出发条件 / 可选</span>
+              <h2>先给宇宙一个预算，或者不给。</h2>
+              <p>不填，它会更大胆；填了，它会收敛一点，但只说一点。</p>
+            </div>
+            <div class="casual-budget">
+              <label for="casual-budget">人均预算 <small>可留空</small></label>
+              <div class="text-input-wrap money-input">
+                <span class="input-icon">¥</span>
+                <input id="casual-budget" type="number" min="0" step="500" inputmode="numeric" placeholder="不设限">
+              </div>
+              <span class="casual-budget-hint">人民币 · 约 3–7 天 · 含往返大交通</span>
+            </div>
+          </div>
+
+          <div class="casual-route-grid">
+            <form class="casual-route mbti-route" id="casual-mbti-form" novalidate>
+              <div class="casual-route-head"><span>路线 A / 人格已知</span><b>01</b></div>
+              <h2>输入你的 MBTI，<br>让值班编辑过度解读。</h2>
+              <p>我们不假装它比心理学更可靠。但他确实很擅长把一个字母解释成一张机票。</p>
+              <div class="mbti-picks" id="mbti-picks" role="group" aria-label="快速选择 MBTI 类型">
+                <button type="button" data-mbti="INTJ">INTJ</button>
+                <button type="button" data-mbti="INTP">INTP</button>
+                <button type="button" data-mbti="ENTJ">ENTJ</button>
+                <button type="button" data-mbti="ENTP">ENTP</button>
+                <button type="button" data-mbti="INFJ">INFJ</button>
+                <button type="button" data-mbti="INFP">INFP</button>
+                <button type="button" data-mbti="ENFJ">ENFJ</button>
+                <button type="button" data-mbti="ENFP">ENFP</button>
+                <button type="button" data-mbti="ISTJ">ISTJ</button>
+                <button type="button" data-mbti="ISFJ">ISFJ</button>
+                <button type="button" data-mbti="ESTJ">ESTJ</button>
+                <button type="button" data-mbti="ESFJ">ESFJ</button>
+                <button type="button" data-mbti="ISTP">ISTP</button>
+                <button type="button" data-mbti="ISFP">ISFP</button>
+                <button type="button" data-mbti="ESTP">ESTP</button>
+                <button type="button" data-mbti="ESFP">ESFP</button>
+              </div>
+              <div class="casual-mbti-entry">
+                <label for="casual-mbti">或者直接输入</label>
+                <div class="casual-mbti-control">
+                  <input id="casual-mbti" type="text" maxlength="4" autocomplete="off" spellcheck="false" placeholder="INTJ" aria-describedby="casual-mbti-error">
+                  <button type="submit" id="casual-mbti-submit"><span>点我，被看穿</span><b>↗</b></button>
+                </div>
+              </div>
+              <p class="casual-field-error" id="casual-mbti-error" role="alert"></p>
+            </form>
+
+            <article class="casual-route question-route">
+              <div class="casual-route-head"><span>路线 B / 人格待定</span><b>02</b></div>
+              <h2>让远方现场<br>出一道怪题。</h2>
+              <p>题目不推测 MBTI。它只负责从你的回答里打捞一个目的地，再煞有介事地证明这是唯一答案。</p>
+              <div class="question-route-art" aria-hidden="true">
+                <span class="question-mark">?</span>
+                <i></i><i></i><i></i>
+                <small>NO PSYCHOMETRIC<br>VALIDITY INSIDE</small>
+              </div>
+              <button class="casual-question-button" id="draw-question" type="button"><span>让远方现在出题</span><b>✦</b></button>
+              <p class="question-route-note">每次题目、目的地与理由都会重新写定。刷新不会得到同一份命运。</p>
+            </article>
+          </div>
+          <div class="casual-service-note" id="casual-service-note">
+            <span class="service-dot" aria-hidden="true"></span>
+            <span id="casual-service-text">正在确认远方接线员是否值班……</span>
+            <small>只把本次类型或问答交给值班室；本站不保存历史记录。</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-shell" id="quiz-shell" hidden>
+        <div class="quiz-top">
+          <button type="button" class="text-back" id="quiz-back">← 换个玩法</button>
+          <div class="quiz-progress-label"><span>ODD QUESTION / SINGLE TAKE</span><span>01</span></div>
+        </div>
+        <div class="quiz-progress"><span></span></div>
+        <div class="quiz-layout">
+          <div class="quiz-aside">
+            <span class="quiz-whisper">临时问卷</span>
+            <p class="quiz-aside-copy">这道题没有验证过任何人格理论。<br>但我们会装得很像。</p>
+            <span class="quiz-random-label">RANDOM PROMPT / 不重复</span>
+          </div>
+          <div class="quiz-main">
+            <div id="quiz-content">
+              <p class="quiz-kicker" id="quiz-kicker">值班编辑正在组织一个不可靠的问题</p>
+              <h1 id="quiz-question"></h1>
+              <div class="quiz-options" id="quiz-options"></div>
+              <p class="quiz-footnote">没有正确答案。只有一个更方便值班室强词夺理的回答。</p>
+            </div>
+            <div class="quiz-inline-loading" id="quiz-loading" hidden>
+              <div class="quiz-loading-stamp">签</div>
+              <p id="quiz-loading-title">正在翻一本很旧的地图……</p>
+              <small>题目要现写，稍微等它装腔作势。</small>
+            </div>
+            <div class="quiz-actions">
+              <button type="button" class="text-back" id="regenerate-question" hidden>换一题</button>
+              <span>回答后，值班室会开始强词夺理。</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="thinking-shell" id="thinking-shell" hidden>
+        <div class="thinking-orbit">
+          <span class="orbit-word word-a">海风</span><span class="orbit-word word-b">旧城</span><span class="orbit-word word-c">山路</span><span class="orbit-word word-d">偶遇</span>
+          <div class="thinking-core"><span>判</span><small>正在过度解读</small></div>
+        </div>
+        <p id="thinking-label">正在把你的犹豫折成一张机票……</p>
+        <div class="thinking-bar"><span></span></div>
+        <small>请勿关闭页面，宇宙正在翻找它的地图。</small>
+      </div>
+
+      <div class="casual-error-shell" id="casual-error-shell" hidden>
+        <div class="casual-error-card">
+          <p class="eyebrow light"><span></span>NIGHT DESK / 信号中断</p>
+          <h1>宇宙暂时<br>没有回话。</h1>
+          <p class="casual-error-message" id="casual-error-message"></p>
+          <div class="casual-error-actions">
+            <button type="button" class="solid-button" id="retry-casual">再试一次 <span>↻</span></button>
+            <button type="button" class="outline-button" id="error-back">回到入口 <span>←</span></button>
+          </div>
+          <small>接线员暂未上岗：请在项目目录执行 <code>node server.mjs</code>，并在 <code>.env</code> 中配置服务密钥。</small>
+        </div>
+      </div>
+
+      <div class="casual-result-slot" id="casual-result" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">偏航<small>OFF COURSE</small></div>
+    <p>旅行不是迷路，是不接受默认路线。</p>
+    <div class="footer-meta"><span>© <span id="year"></span> OFF COURSE</span><span>认真计划 · 随意出发</span></div>
+  </footer>
+
+  <div class="loading-screen" id="loading-screen" aria-hidden="true">
+    <div class="loading-map">
+      <svg viewBox="0 0 420 420" fill="none" aria-hidden="true">
+        <circle cx="210" cy="210" r="175" stroke="currentColor" opacity=".16"/>
+        <circle cx="210" cy="210" r="126" stroke="currentColor" stroke-dasharray="4 10" opacity=".38"/>
+        <path d="M61 250c49-92 118-89 157-28 33 52 83 28 139-46" stroke="currentColor" stroke-width="2" stroke-dasharray="3 11"/>
+        <circle cx="61" cy="250" r="7" fill="#e85f39"/><circle cx="357" cy="176" r="7" fill="#e85f39"/>
+        <g class="loading-plane" transform="translate(305 205) rotate(25)"><path d="M0 0l24 9-24 9 6-9-6-9Z" fill="currentColor"/></g>
+      </svg>
+      <span class="loading-stamp">PLAN<br>WITH<br>FEELING</span>
+    </div>
+    <p id="loading-title">正在联网检索交通、天气和开放信息……</p>
+    <div class="loading-dots"><i></i><i></i><i></i></div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><div class="noscript">这个网站需要开启 JavaScript 才能生成你的旅行。</div></noscript>
+  <script src="app.js"></script>
+</body>
+</html>

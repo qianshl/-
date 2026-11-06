@@ -1,0 +1,22 @@
+[Unit]
+Description=Off Course travel website
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=offcourse
+Group=offcourse
+WorkingDirectory=/opt/off-course
+Environment=NODE_ENV=production
+ExecStart=/usr/bin/node /opt/off-course/server.mjs
+Restart=on-failure
+RestartSec=5
+TimeoutStartSec=30
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target

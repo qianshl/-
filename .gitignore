@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+node_modules/
+work/
+dist/
+output/
+*.tgz
+deploy/ocfix*.sh
+deploy/off-course-install.sh
+deploy/off-course-update.sh
+edge-*/
+$null

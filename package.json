@@ -1,0 +1,13 @@
+{
+  "name": "off-course-travel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "偏航 OFF COURSE 旅行规划网站",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check server.mjs && node --check outputs/app.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
